@@ -1,1 +1,3 @@
-rootProject.name = 'example'
+rootProject.name = "Johnacondas-RuneLite-Pandora"
+
+include(":plugins:prayer-flick-helper")
