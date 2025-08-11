@@ -74,7 +74,7 @@ public class PrayerFlickHelperPlugin extends Plugin
         int cyclesUntilImpact = p.getEndCycle() - client.getGameCycle();
         if (cyclesUntilImpact < 0) return; // already expired
 
-        int ticksUntilImpact = Math.max(0, cyclesUntilImpact / Constants.GAME_TICK_LENGTH);
+        int ticksUntilImpact = Math.max(0, cyclesUntilImpact / Constants.CLIENT_TICKS_PER_GAME_TICK);
         int landTick = currentTick + ticksUntilImpact;
 
         queue.add(new IncomingHit(style, landTick));
