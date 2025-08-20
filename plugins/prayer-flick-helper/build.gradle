@@ -4,15 +4,11 @@ dependencies {
 	compileOnly "org.projectlombok:lombok:1.18.32"
 	annotationProcessor "org.projectlombok:lombok:1.18.32"
 
+	// JSON parsing
+	compileOnly "com.google.code.gson:gson:2.10.1"
+
 	testImplementation "net.runelite:client:${runeLiteVersion}"
 	testImplementation "net.runelite:runelite-api:${runeLiteVersion}"
 	testImplementation "org.projectlombok:lombok:1.18.32"
 	testAnnotationProcessor "org.projectlombok:lombok:1.18.32"
-}
-
-jar {
-	from("${projectDir}/src/main/resources") {
-		include "runelite-plugin.properties"
-		include "icon.png"
-	}
 }

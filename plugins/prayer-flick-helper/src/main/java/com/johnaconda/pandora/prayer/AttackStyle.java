@@ -1,13 +1,23 @@
 package com.johnaconda.pandora.prayer;
 
-import net.runelite.api.widgets.WidgetInfo;
+/**
+ * Stores the Prayer-tab widget group/child for the three overheads.
+ * If your client uses different child ids, adjust with Dev Tools → Widget Inspector.
+ */
+public enum AttackStyle
+{
+    MAGIC(541, 10),   // Protect from Magic
+    RANGED(541, 12),  // Protect from Missiles
+    MELEE(541, 8);    // Protect from Melee
 
-public enum AttackStyle {
-    MAGIC(WidgetInfo.PRAYER_PROTECT_FROM_MAGIC),
-    RANGED(WidgetInfo.PRAYER_PROTECT_FROM_MISSILES),
-    MELEE(WidgetInfo.PRAYER_PROTECT_FROM_MELEE);
+    private final int groupId;
+    private final int childId;
 
-    private final WidgetInfo widgetInfo;
-    AttackStyle(WidgetInfo w) { this.widgetInfo = w; }
-    public WidgetInfo widgetInfo() { return widgetInfo; }
+    AttackStyle(int groupId, int childId) {
+        this.groupId = groupId;
+        this.childId = childId;
+    }
+
+    public int groupId() { return groupId; }
+    public int childId() { return childId; }
 }

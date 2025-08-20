@@ -1,0 +1,11 @@
+{
+  "projectiles": {
+    // Example seeds — replace/extend as you learn IDs
+    "335": "RANGED",
+    "1099": "MAGIC"
+  },
+  "animations": {
+    // Moss giant melee example; adjust ticks after testing
+    "4658": { "style": "MELEE", "ticks": 1 }
+  }
+}
