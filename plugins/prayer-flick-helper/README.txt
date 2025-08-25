@@ -1,1 +1,0 @@
-Plugin to highlight the prayer to flick on

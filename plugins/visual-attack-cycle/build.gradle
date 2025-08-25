@@ -2,6 +2,7 @@ dependencies {
 	compileOnly "net.runelite:client:${runeLiteVersion}"
 	compileOnly "net.runelite:runelite-api:${runeLiteVersion}"
 	compileOnly "org.projectlombok:lombok:1.18.32"
+	compileOnly 'javax.inject:javax.inject:1'
 	annotationProcessor "org.projectlombok:lombok:1.18.32"
 
 	// JSON parsing
